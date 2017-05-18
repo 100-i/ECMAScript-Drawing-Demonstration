@@ -1,16 +1,16 @@
 import { Matrix } from 'sylvester-es6'
 
+// Add tau to simplify some expressions
+var TAU = 2 * Math.PI
 
-var M = new Matrix([
-  [0,   0, 0],
-  [10, 10, 0]
-])
+document.body.style.textAlign = "center"
 
-// Create a set of vertices for an object to draw.
-var vertices = [ 1.0, 1.0, 0.0,
-                -1.0, 1.0, 0.0,
-                 1.0,-1.0, 0.0,
-                -1.0,-1.0, 0.0 ]
+// Create a title at the head of the document
+var header = document.createElement('h1')
+header.innerHTML = 'ECMAScript Drawing Demonstration'
+document.body.appendChild(header)
+
+document.body.appendChild(document.createElement('hr'))
 
 
 // Create the canvas element.
@@ -20,7 +20,7 @@ var canvas = document.createElement('canvas')
 document.body.appendChild(canvas)
 
 function init2dDraw (canvas) {
-  canvas.width = 640
+  canvas.width = document.body.clientWidth
   canvas.height = 480
   canvas.style.border = "1px solid black"
   // Get the initial time.
@@ -34,10 +34,23 @@ function init2dDraw (canvas) {
       return Math.round(Math.random() * 256).toString(16)
     }
 
-    var d = 50
-    for (var i = 0; i < d; i++) {
-      ctx.rect((canvas.width/3)+(100*Math.sin(i/Math.random()*200*Date.now()*Math.PI/180)), (canvas.width/d)*i, 3+i*10*Math.cos(i*Math.random()*100*Math.PI/180), 3+i)
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
+    var s = 6
+
+    function createShape(origin) {
+      var p = Math.round(Math.random() * 64)
+      var r = 12
+        for (var i = 1; i < p+1; i++) {
+          ctx.beginPath()
+          ctx.moveTo(origin[0], origin[1])
+          ctx.lineTo(origin[0]+r*Math.cos(i*TAU/p), origin[1]+r*Math.sin(i*TAU/p))
+          ctx.stroke()
+        }
+    }
+
+    var o = [[12,32], [64, 32]]
+
+    for (var i = 0; i < 2; i++) {
+      createShape([Math.random()*canvas.width, Math.random()*canvas.height])
     }
 
     ctx.fill()
