@@ -1,0 +1,12 @@
+# Vim swap files
+*.swo
+*.swp
+
+# Npm node module location
+/node_modules/
+
+# Webpack generated fils
+/dist/
+
+# Temporary until /dist/ is used.
+bundle.js

@@ -1,0 +1,15 @@
+{
+  "name": "sylvester-yarn-test",
+  "version": "1.0.0",
+  "description": "A test of sylvester and webpack.",
+  "main": "index.js",
+  "author": "100 Industries",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --watch"
+  },
+  "devDependencies": {
+    "sylvester-es6": "^0.0.2",
+    "webpack": "^2.5.1"
+  }
+}
