@@ -19,7 +19,7 @@ run and interpret JavaScript without a web-browser.
 choco install nodejs.install
 ~~~~~~
 
-#### Yarn
+### Yarn
 
 [Yarn](https://yarnpkg.com/en/) is a dependency management system for JavaScript.
 #### Windows
@@ -56,6 +56,9 @@ ii .
 
 Recreate this project From scratch.
 
+We will use `yarn` to initialize the project and add
+[Webpack](https://webpack.gitub.com).
+
 ~~~~~~shell
 # Initialize the project with Yarn.
 yarn init
@@ -63,6 +66,6 @@ yarn init
 # Add Webpack to the project.
 yarn add webpack --dev
 
-# Run webpack to the projcet.
+# Run webpack to build the project's asset.
 yarn run webpack
 ~~~~~~
