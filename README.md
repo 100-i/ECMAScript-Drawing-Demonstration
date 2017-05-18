@@ -5,7 +5,13 @@ An example of how to draw to a `canvas` HTML element.
 
 ## Requirements
 
+The software from each section below must be installed for this project to
+function.
+
 ### NodeJS
+
+[NodeJS](https://nodejs.org/en/) is a JavaScript runtime that allows you to
+run and interpret JavaScript without a web-browser.
 
 #### Windows
 
@@ -15,13 +21,14 @@ choco install nodejs.install
 
 #### Yarn
 
+[Yarn](https://yarnpkg.com/en/) is a dependency management system for JavaScript.
 #### Windows
 
 ~~~~~~powershell
 choco install yarn
 ~~~~~~
 
-## Use
+## Using the Demo.
 
 First, clone the project.
 
@@ -44,6 +51,7 @@ A simple shortcut from powershell uses the `Invoke-Item` cmdlet.
 # 'ii' aliases Invoke-Item, and '.' expands to the current working directory.
 ii .
 ~~~~~~
+
 ## Recreating This Project
 
 Recreate this project From scratch.
