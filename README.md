@@ -28,7 +28,7 @@ choco install nodejs.install
 choco install yarn
 ~~~~~~
 
-## Using the Demo.
+## Using the Demonstration
 
 First, clone the project.
 
@@ -49,7 +49,7 @@ A simple shortcut from powershell uses the `Invoke-Item` cmdlet.
 
 ~~~~~~powershell
 # 'ii' aliases Invoke-Item, and '.' expands to the current working directory.
-ii .
+PS > ii .
 ~~~~~~
 
 ## Recreating This Project
