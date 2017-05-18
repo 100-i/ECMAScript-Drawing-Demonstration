@@ -8,7 +8,7 @@ An example of how to draw to a `canvas` HTML element.
 The software from each section below must be installed for this project to
 function.
 
-### NodeJS
+### &#9679; NodeJS
 
 [NodeJS](https://nodejs.org/en/) is a JavaScript runtime that allows you to
 run and interpret JavaScript without a web-browser.
@@ -19,7 +19,7 @@ run and interpret JavaScript without a web-browser.
 choco install nodejs.install
 ~~~~~~
 
-### Yarn
+### &#9679; Yarn
 
 [Yarn](https://yarnpkg.com/en/) is a dependency management system for JavaScript.
 #### Windows
