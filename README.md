@@ -45,9 +45,10 @@ yarn run build
 
 Then open `index.html` in a web browser.
 
-A simple shortcut from powershell uses the `Invoke-Item` cmdlet.
-
 ### Note
+
+A simple shortcut to open a web-browser from powershell uses the 
+`Invoke-Item` cmdlet:
 
 ~~~~~~powershell
 # 'ii' aliases Invoke-Item, and '.' expands to the current working directory.
