@@ -38,7 +38,7 @@ function init2dDraw (canvas) {
 
     function createShape(origin) {
       var p = Math.round(Math.random() * 64)
-      var r = 12
+      var r = Math.round(Math.random() * 32)
         for (var i = 1; i < p+1; i++) {
           ctx.beginPath()
           ctx.moveTo(origin[0], origin[1])
