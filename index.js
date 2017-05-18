@@ -34,18 +34,16 @@ function init2dDraw (canvas) {
       return Math.round(Math.random() * 256).toString(16)
     }
 
-    function drawStats () {
-
+    var d = 50
+    for (var i = 0; i < d; i++) {
+      ctx.rect((canvas.width/3)+(100*Math.sin(i/Math.random()*200*Date.now()*Math.PI/180)), (canvas.width/d)*i, 3+i*10*Math.cos(i*Math.random()*100*Math.PI/180), 3+i)
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
     }
-
-    var d = 100
-    for (var i = 0; i < d; i++)
-      ctx.rect((canvas.width/d)*i+10, (canvas.width/3)+(100*Math.sin(i/2*Date.now()*Math.PI/180)), 3+i, 3+i*2)
 
     ctx.fill()
   }
 
-  setInterval(draw, 200)
+  setInterval(draw, 100)
 }
 
 init2dDraw(canvas)

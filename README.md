@@ -1,4 +1,4 @@
-Ecmascript Drawing Demonstration
+ECMAScript Drawing Demonstration
 ================================
 
 An example of how to draw to a `canvas` HTML element.
@@ -33,7 +33,7 @@ choco install yarn
 First, clone the project.
 
 ~~~~~~powershell
-git clone https://github.com/100-i/Ecmascript-Drawing-Demonstration.git
+git clone https://github.com/100-i/ECMAScript-Drawing-Demonstration.git
 ~~~~~~
 
 Second, navigate to the project directoy, and build the project's Ecmascript
