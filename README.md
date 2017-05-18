@@ -47,6 +47,8 @@ Then open `index.html` in a web browser.
 
 A simple shortcut from powershell uses the `Invoke-Item` cmdlet.
 
+### Note
+
 ~~~~~~powershell
 # 'ii' aliases Invoke-Item, and '.' expands to the current working directory.
 PS > ii .
