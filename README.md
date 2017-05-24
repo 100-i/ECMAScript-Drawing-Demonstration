@@ -45,6 +45,8 @@ yarn run build
 
 Then open `index.html` in a web browser.
 
+To stop webpack, press <kbd>Ctrl</kbd>+<kbd>c</kbd>
+
 ### Note
 
 A simple shortcut to open a web-browser from powershell uses the 

@@ -1,3 +1,4 @@
+var TAU=2*Math.PI
 /**
  * Start the application's drawing events.
  */
